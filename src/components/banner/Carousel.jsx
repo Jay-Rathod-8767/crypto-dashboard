@@ -9,7 +9,7 @@ import { TrendingCoins } from "../../config/api";
 // Utility: Format numbers with commas
 export function numberWithCommas(value) {
   if (value === undefined || value === null) return "N/A";
-  return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 // Loader component showing spinner and message

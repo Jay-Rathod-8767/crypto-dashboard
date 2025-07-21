@@ -9,16 +9,11 @@ import parse from "html-react-parser";
 import { CryptoState } from "../CryptoContext";
 import { SingleCoin } from "../config/api";
 import CoinInfo from "../components/CoinInfo";
-import { numberWithCommas } from "../components/Banner/Carousel";
+import { numberWithCommas } from "../components/banner/Carousel";
 
-// -----------------------------
-// Theme
-// -----------------------------
+
 const theme = createTheme();
 
-// -----------------------------
-// Styled Components
-// -----------------------------
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
   [theme.breakpoints.down("md")]: {
