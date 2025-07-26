@@ -3,7 +3,7 @@ import axios from "axios";
 import { CryptoState } from "../CryptoContext"; // Correctly importing CryptoState
 import { useNavigate } from "react-router-dom";
 import { CoinList } from "../config/api";
-import { numberWithCommas } from "./Banner/Carousel";
+import { numberWithCommas } from "./banner/Carousel";
 import { makeStyles } from "@mui/styles"; // Ensure correct import for v4 users
 
 import {
@@ -34,7 +34,7 @@ const CoinTable = () => {
   const [coin, setCoin] = useState([]);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
-  const { currency, symbol } = CryptoState(); // ✅ Fix applied: added 'symbol'
+  const { currency, symbol } = CryptoState(); // 
 
   const navigate = useNavigate();
   const classes = useStyles();
